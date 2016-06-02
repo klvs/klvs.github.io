@@ -58,24 +58,37 @@
                     <p class="">Every day data privacy become a more relevant and important topic. Beyond the question of “who owns our data?” is “how can we control what we give away?” Often modern people unwittingly trade privacy for trivial rewards and features. Even the  smallest of features can leak potentially sensitive data. In doing this project we hope to raise awareness about privacy. </p>
                     
                 </div>
-                <div class="col-lg-12">
-                    <h2>Current Progress and Vis Layout</h2>
+                <div id="phase1" class="col-lg-12">
+                    <h2>Phase 1</h2>
                     <p>Just a screenshot, not interactive. On the x axis is the unix time stamp of each data point. The y axis represents individual users. The time starts around 4pm and ends 9pm the next day.</p>
-                    <img class="img-responsive pull-left" src="./vis_annotate.png">
                 </div>
                 <div class="col-lg-12">
-                    <h2>Additional Potential Layouts</h2>
+                    <h2>Group Members</h2>
                     <ol>
-                        <li><p>Individual view of each user</p></li>
-                        <li><p>Sliding time scale to view different segments of time</p></li>
-                        <li><p>Overlay of survey collected "sleep times" for selected users to answer the question: "Does FB know when we sleep?"</p></li>
+                        <li><p>Alex Roman</p></li>
+                        <li><p>Bodey Provansal</p></li>
+                        <li><p>Ido Kinel</p></li>
                     </ol>
                 </div>
                 <div class="col-lg-12">
-                    <h2>Additional Layout</h2>
+                    <h2>Layout of Visualization</h2>
+                    <em><p>Note: These are rasterized images, not interactive JS-defined d3 layouts for the time being.</p></em>
+                    <p>CS165: Data Programming for Visualization in collaboration with collaboration with Suresh K Lodha and Lev Stefanovich. Spring '16</p>
+                    <ol>
+                        <li><p>Main scrollable visualization showing multiple days of data</p></li>
+                        <li><p>"Stacked" view showing multiple days (w/ intent of comparing different user-classes)</p></li>
+                        <li><p>Individual view on click</p></li>
+                    </ol>
+                </div>
+                <div class="col-lg-12">
+                    <h2>Main layout</h2>
+                    <p>Shows multiple days of data</p>
+                    <img class="img-responsive pull-left" src="./vis_annotate.png">
+                </div>
+                <div class="col-lg-12">
+                    <h2>Secondary layout</h2>
                     <p>This is a breakdown of users over a number of days. It groups them into night owls, early birds and power users. </p>
                     <img class="img-responsive pull-left" src="./altview.png">
-                </div>
                 <div class="col-lg-12">
                     <h2>Interactive Variables</h2>
                     <ol>
@@ -85,8 +98,18 @@
                     </ol>
                 </div>
                 <div class="col-lg-12">
-                    <h2>Data Accuracy</h2>
+                    <h2>Data Sources</h2>
                     <p>The data is retrieved from an unofficial facebook API. The accuracy of the data isn't questionable because it's directly retrieved from facebook.</p>
+                    <p>To collect it we use <a href="https://github.com/defaultnamehere/zzzzz">this script</a></p>
+                </div>
+                <div class="col-lg-12">
+                    <h2>Contributions and Roles</h2>
+                    <strong><p>Austin</p></strong>
+                    <p>Visualization Developer; Initializing the vis, adaptation to compressed data, transitions, tooltips, zooming.</p>
+                    <strong><p>Ido</p></strong>
+                    <p>Visualization Developer; Adding to main vis, intitalization of secondary vis, live axis, scrolling 'window'.</p>
+                    <strong><p>Alex</p></strong>
+                    <p>Data Maester; collection, cleaner, queries, classification. Designer; warden of CSS and beautification. Visualzation Developer; as needed.</p>
                 </div>
                 <div class="col-lg-12">
                     <h2>Privacy</h2>
